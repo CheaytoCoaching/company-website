@@ -2,50 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="login.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
 </head>
 
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <!-- Logo and Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://www.pngall.com/wp-content/uploads/13/Coaching-Logo-PNG-Image.png" 
+             alt="Logo" width="40" height="40" class="me-2">
+        Cheayto Coaching
+      </a>
+
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links and Contact Button -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Centered Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our Podcast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        </ul>
+
+        <!-- Contact Button on the Right -->
+        <form class="d-flex" role="search">
+          <a href="login.html" class="btn btn-dark">Contact Us</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="continer-contact">
     <h6 class="title">Get In Touch</h6>
     <h1 class="second"><b>Contact Us</b></h1>
     <h3 class="third">Your next big move starts here</h3>
-    <div class="form">
-        <div class="row">
-            <div class="field">
-                <label for="fname" class="label">First Name</label><br>
-                <input type="text" id="fname" class="input" name="fname" placeholder="Your name.."><br>
-            </div>
-            <div class="field">
-                <label for="lname" class="label">Last Name</label><br>
-                <input type="text" id="lname" class="input" placeholder="Your last.."><br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="field">
-                <label for="email" class="label">Email</label><br>
-                <input type="text" id="email" class="input" placeholder="username@gmail.com"><br>
-            </div>
-            <div class="field">
-                <label for="phonenumber" class="label">Phome number</label><br>
-                <input type="text" id="phonenumber" class="input" placeholder="+961 00000000"><br>
-            </div>
-        </div>
 
-        <label for="Choose a topic">Choose a topic</label><br>
-        <select id="Choose a topic" name="Choose a topic" placeholder="select one..."><br>
-            <option value="Choose a topic">Choose a topic</option>
-            <option value="General Inquiry">General Inquiry</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
-        </select><br>
-        <label for="message">message</label><br>
-        <textarea id="message" name="message" placeholder="Type your meassage..." style="height:150px"></textarea><br>
-        <input type="checkbox" id="terms" name="terms">I accept the terms
-        <input type="submit" value="Submit">
+      
+    <form class="form">
+      <div class="row">
+        <div class="field">
+          <label for="fname" class="label">First Name</label>
+          <input type="text" id="fname" class="input" name="fname" placeholder="Your name..">
+        </div>
+        <div class="field">
+          <label for="lname" class="label">Last Name</label>
+          <input type="text" id="lname" class="input" name="lname" placeholder="Your last..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="email" class="label">Email</label>
+          <input type="email" id="email" class="input" name="email" placeholder="username@gmail.com">
+        </div>
+        <div class="field">
+          <label for="phonenumber" class="label">Phone Number</label>
+          <input type="text" id="phonenumber" class="input" name="phone" placeholder="+961 00000000">
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="choose-topic" class="label">Choose a topic</label>
+        <select id="choose-topic" name="topic">
+          <option value="">Select one...</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="message" class="label">Message</label>
+        <textarea id="message" name="message" placeholder="Type your message..." style="height:150px"></textarea>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+          crossorigin="anonymous"></script>
+
 </body>
-
 </html>
 
